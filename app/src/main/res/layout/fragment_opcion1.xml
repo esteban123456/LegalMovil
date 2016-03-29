@@ -1,0 +1,165 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.esteban.legalmovil.Opcion1">
+<ScrollView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:stretchColumns="*">
+
+        <TableRow
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+            <Button
+
+                android:id="@+id/imageButton1"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Normatividad"
+                android:background="@drawable/imagen1"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:layout_gravity="right"
+               />
+
+
+            <Button
+
+                android:id="@+id/imageButton2"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Jurisprudencia"
+                android:background="@drawable/imagen2"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                />
+
+
+        </TableRow>
+
+        <View
+            android:layout_height="8dp"
+            android:background="#000000"
+            />
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+
+                android:id="@+id/imageButton3"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Flujogramas"
+                android:background="@drawable/imagen3"
+                android:layout_weight="1"
+
+                android:textSize="17dp"
+                />
+            <Button
+
+                android:id="@+id/imageButton4"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Prácticas Forense"
+                android:background="@drawable/imagen4"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:layout_gravity="fill_horizontal" />
+
+
+        </TableRow>
+        <View
+            android:layout_height="8dp"
+            android:background="#000000"/>
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+
+                android:id="@+id/imageButton5"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="El Peruano"
+                android:background="@drawable/imagen5"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                />
+            <Button
+
+                android:id="@+id/imageButton6"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Calculos \n Tributarios \n y Penitenciarios"
+                android:background="@drawable/imagen6"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:layout_gravity="center_horizontal" />
+
+        </TableRow>
+
+        <View
+            android:layout_height="8dp"
+            android:background="#000000"/>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <Button
+
+                android:id="@+id/imageButton7"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Oportunidad Laboral"
+                android:background="@drawable/imagen7"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                />
+            <Button
+
+                android:id="@+id/imageButton8"
+                android:layout_width="150dp"
+                android:layout_height="180dp"
+                android:gravity="center"
+                android:padding="20dp"
+                android:text="Poder Judicial"
+                android:background="@drawable/imagen8"
+                android:layout_weight="1"
+                android:textSize="17dp"
+                android:layout_gravity="center_horizontal" />
+
+        </TableRow>
+        <View
+            android:layout_height="8dp"
+            android:background="#000000"/>
+
+    </TableLayout>
+</ScrollView>
+</FrameLayout>

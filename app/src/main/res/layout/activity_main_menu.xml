@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#201e1e"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:id="@+id/toolbar"
+        android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
+        tools:showIn="@layout/activity_main_menu"
+
+>
+
+    </android.support.v7.widget.Toolbar>
+    
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginBottom="60dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <HorizontalScrollView
+                android:id="@+id/hScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fillViewport="true"
+                android:scrollbars="none" >
+
+                <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" >
+                </TabWidget>
+            </HorizontalScrollView>
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewPager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#201e1e"
+    android:layout_alignParentBottom="true"
+    android:layout_alignBottom="@android:id/tabhost"
+    android:gravity="center"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_inicio"
+        android:background="#201e1e"
+        android:paddingTop="7dp"
+        android:text="Inicio"
+        android:textSize="8dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_perfil"
+        android:background="#201e1e"
+        android:paddingTop="7dp"
+        android:text="Mi Perfil"
+
+        android:textSize="9dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/icos_agen"
+        android:background="#201e1e"
+        android:paddingTop="7dp"
+        android:text="Agenda"
+
+        android:textSize="9dp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/ic_noti"
+        android:background="#201e1e"
+        android:paddingTop="7dp"
+        android:text="Notificaciones"
+        android:textSize="9dp" />
+</LinearLayout>
+
+</RelativeLayout>
